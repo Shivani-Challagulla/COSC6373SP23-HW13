@@ -1,32 +1,31 @@
-# COSC6373SP23-HW12-ICA
+# COSC6373SP23-HW13-ICA
 
-## About COSC6373 Homework 12
+## About COSC6373 Homework 13
 
-### Binary Classification Metrics
+### Object Detection with YOLO
 
 ### Deadline
-Monday 3/27/2023 11:59 PM CST
+Monday 4/3/2023 11:59 PM CST
 
 
 ### Description
-In this assignment, you will use Convolutional Autoencoders to detect anomalies in images. For the purposes of this assignment, you will use the Flowers Recognition dataset [1]. The dataset contains 4,242 images of five categories of flowers: daisy, dandelion, rose, sunflower, and tulip. 
+In this assignment, you will apply a YOLOv3 model for object detection on images using Keras. Please follow the steps described in the article [1]. 
 
 ### Tasks
 The specific steps for this task are:
-1.	Create a Convolutional Autoencoder as described in this article [2].
-2.	Train your Autoencoder on the sunflower images (feel free to use a split of your choice). Output the same examples of the original vs. reconstructed images.
-3.	Evaluate your Autoencoder to each one of the other flower types to detect anomalies and find the MSE between the normal and anomalous images.
-4.	Output the distribution of density scores among training, validation, and anomalies for each flower type [2].
-5.	How does the autoencoder work for anomaly detection?
-6.	What other methods can be used instead of anomaly detection?
+1.	Download and save the pre-trained model weights.
+2.	Create the YOLOv3 model.
+3.	Make a prediction on three images of your choice (e.g., images of people, animals, objects etc.) and report the model’s output.
+4.	What is the purpose of the non-max suppression?
+5.	You notice that the non-max suppression of the model is 0.5. Please repeat step 3 using the following values for non-max suppression: (i) 0.3, and (ii) 0.8. What do you observe? 
+
 
 
 
 ### References
-1.	“Flowers Recognition dataset,” 
-	https://www.kaggle.com/datasets/alxmamaev/flowers-recognition?select=flowers 
-2.	“Image Anomaly Detection / Novelty Detection Using Convolutional Auto Encoders In Keras & Tensorflow 2.0,”
-	 https://medium.com/@judewells/image-anomaly-detection-novelty-detection-using-	convolutional-auto-encoders-in-keras-1c31321c10f2
+1.	“Object Detection with YOLOv3 in Keras,” 
+	https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-	in-keras/ 
+
 
 
 
@@ -39,7 +38,8 @@ This assignment is done individually, you can share and discuss ideas but you mu
 4.	Submit your working code in GitHub (.py or .ipynb files)
 5.	Upload any .zip file or folder if your code refers to the paths of those files.
 6.	Update the README.md file with instructions on how to run your code.
-7.	A pdf of your report (name: COSC6373S23-HW12-ICA-Report-Firstname-Lastname.pdf) with your output and comments.
+7.	A pdf of your report (name: COSC6373S23-HW13-ICA-Report-Firstname-Lastname.pdf) with your output and comments.
+
 
 
 ### Contact
